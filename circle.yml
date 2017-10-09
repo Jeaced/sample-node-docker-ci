@@ -4,11 +4,11 @@ machine:
 
 dependencies:
   override:
-    - docker build -t ipanchenko/lab-node .
+    - docker build -t jeaced/sample-node .
 
 test:
   override:
-    - docker run ipanchenko/lab-node npm test
+    - docker run jeaced/sample-node npm test
 
 deployment:
   production:
