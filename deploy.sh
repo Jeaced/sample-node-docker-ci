@@ -2,6 +2,7 @@
 docker push jeaced/sample-node
 
 ssh sergey_umnov@35.195.239.193 << EOF
+su -l root
 docker pull jeaced/sample-node:latest
 docker stop web || true
 docker rm web || true
